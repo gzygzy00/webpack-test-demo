@@ -61,4 +61,19 @@ module: {
   }
 
 http-server . -c-1
+
+
+7.
+yarn add webpack-dev-server --dev
+
+mode: 'development',
+devtool: 'inline-source-map',
+devServer: {
+  contentBase: './dist',
+},
+
+"scripts": {
+    "start": "webpack-dev-server --open",  // open是否打开浏览器
+    "build": "rm -rf dist && webpack",
+    "test"
 ```
