@@ -12,7 +12,15 @@ module.exports = {
   plugins: [new htmlWebpackPlugin({
     title: 'app',
     template: "src/assets/index.html"
-  })]
+  })],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  }
 };
 
 

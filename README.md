@@ -32,7 +32,7 @@ package.json
 yarn build
 
 
-5.
+5.引入html
 yarn add html-webpack-plugin --dev
 
 const htmlWebpackPlugin = require('html-webpack-plugin');   //导入插件
@@ -45,4 +45,20 @@ module.exports = {
         })
     ]
 }
+
+
+6.引入CSS
+yarn add css-loader --dev
+yarn add style-loader --dev
+
+module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  }
+
+http-server . -c-1
 ```
