@@ -76,4 +76,13 @@ devServer: {
     "start": "webpack-dev-server --open",  // open是否打开浏览器
     "build": "rm -rf dist && webpack",
     "test"
+
+
+8. css抽成文件
+yarn add mini-css-extract-plugin --dev
+
+
+
+9.
+webpack config merge
 ```

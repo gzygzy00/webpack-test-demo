@@ -1,22 +1,14 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');   //导入插件
-
-var path = require('path');
+const miniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const base = require('./webpack.config.base')
 
 module.exports = {
-  mode: 'development',
+  ...base,  // 引入base的所有属性
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
   },
-  entry: './src/index.js',
-  output: {
-    // path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js'
-  },
-  plugins: [new htmlWebpackPlugin({
-    title: 'app',
-    template: "src/assets/index.html"
-  })],
   module: {
     rules: [
       {
