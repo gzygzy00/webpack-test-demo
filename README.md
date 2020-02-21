@@ -85,4 +85,10 @@ yarn add mini-css-extract-plugin --dev
 
 9.
 webpack config merge
+
+
+10.sass
+yarn add sass-loader dart-sass --dev
+https://webpack.js.org/loaders/sass-loader/
+
 ```
