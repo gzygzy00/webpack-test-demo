@@ -100,4 +100,13 @@ yarn add stylus-loader stylus --dev
 
 13.懒加载
 
+14.创建分支
+git branch gh-pages
+git checkout gh-pages
+(重置 git reset --hard HEAD)
+(删除 without gitignore, modules, dist)
+mv dist/* ./
+rm -rf dist
+git push 提示复制
+
 ```
