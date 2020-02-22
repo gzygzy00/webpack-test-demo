@@ -91,4 +91,11 @@ webpack config merge
 yarn add sass-loader dart-sass --dev
 https://webpack.js.org/loaders/sass-loader/
 
+
+11.less stylus
+yarn add less-loader less --dev
+yarn add stylus-loader stylus --dev
+
+12.file-loader
+
 ```

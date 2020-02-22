@@ -17,6 +17,19 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
+      {
+        test: /\.less$/,
+        loader: ['style-loader', 'css-loader', 'less-loader'] // 将 Less 编译为 CSS
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
@@ -31,6 +44,20 @@ module.exports = {
               implementation: require('dart-sass'),
             },
           }
+        ],
+      },
+      {
+        test: /\.styl$/,
+        use: [
+          {
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
+          {
+            loader: "stylus-loader" // compiles Stylus to CSS
+          },
         ],
       },
     ],
