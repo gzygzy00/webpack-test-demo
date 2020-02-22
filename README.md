@@ -98,4 +98,6 @@ yarn add stylus-loader stylus --dev
 
 12.file-loader
 
+13.懒加载
+
 ```
