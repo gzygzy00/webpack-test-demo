@@ -1,5 +1,6 @@
 yarn build &&
 git checkout gh-pages &&
+rm -rf *.json src *.md yarn.lock;
 rm -rf *.html *.js *.css *.png &&
 mv dist/* ./ &&
 rm -rf dist;
