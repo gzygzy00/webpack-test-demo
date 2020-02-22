@@ -109,4 +109,7 @@ mv dist/* ./
 rm -rf dist
 git push 提示复制
 
+15.创建脚本
+git checkout master
+deploy.sh
 ```
