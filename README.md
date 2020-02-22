@@ -111,5 +111,7 @@ git push 提示复制
 
 15.创建脚本
 git checkout master
-deploy.sh
+创建deploy.sh
+
+sh ./deploy.sh
 ```
